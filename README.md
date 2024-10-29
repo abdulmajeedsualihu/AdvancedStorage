@@ -6,3 +6,7 @@ After successful account binding, I then move to the Deploy and run transactions
 I then login to my github account and created a new repo called MyFirstSmartContract and went back straight to Git tab on Remix IDE and make sure the remote path, remote branch and then push the files to my github repo called MyFirstSmartContract
 
 I really didn't had any issues due to the experience I had with Defi Team on Last Semester @KsTU.
+ I used the function, struct, array, conditionals, loops, visibility specifiers and enums.
+ i had numerous challenges along the way and i had to go back and read the course again in order to understand it well, sometimes i do visit google for answers too.
+ Indeed last week was so challenging.
+ 
