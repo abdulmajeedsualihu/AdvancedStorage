@@ -2,7 +2,7 @@
 pragma solidity ^0.8.26;
 
 contract SimpleStorage {
-    uint256 public favoriteNumber; // Stores the user's favorite number
+    uint256 private favoriteNumber; // Stores the user's favorite number
     uint256[] public favoriteNumbers; // Dynamic array to store multiple favorite numbers
     // Struct to store a person’s name and their favorite number
     struct Person {
@@ -40,4 +40,21 @@ ContractState public state; // State variable to store the current contract stat
      }
      return sum;
 }
+    //Internal Function
+    function internalFuction() internal pure returns (string memory){
+        return "You're awesome";
+    }
+    //Wrapper function to expose internalFunction
+    function callInternalFunction() public pure returns (string memory){
+        return internalFuction();
+    }
+
+    //External function
+    function externalFunction() external pure returns (string memory){
+        return "Hope you are having a great time";
+    }
+    //Wrapper function to expose externalFunction
+    function testExternalFunction() public view returns (string memory){
+        return this.externalFunction();
+    }
 }
