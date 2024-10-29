@@ -7,6 +7,44 @@
 		"abi": [
 			{
 				"inputs": [],
+				"name": "activateContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_number",
+						"type": "uint256"
+					}
+				],
+				"name": "addFavoriteNumber",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_favoriteNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "addPerson",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "callInternalFunction",
 				"outputs": [
 					{
@@ -16,6 +54,13 @@
 					}
 				],
 				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deactivateContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -58,6 +103,19 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "isActive",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
@@ -187,11 +245,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0x2f790b3ba84d2f7a9fab5726a3386b6b0bd6f08f7da5f3c54cb84c10ab10c857",
+			"keccak256": "0x4fb75510951a6208543962ba1fef8aa7c599598cbb76bff985d0bf8e57ba8feb",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://c2a959a028015981a64e0423692f23e55783a98f6b755672929b9f913f15caac",
-				"dweb:/ipfs/QmYTz1SVsY8gP7eSYHHC8ydv4xb4VXx8PGA8A3pRF8Vk7n"
+				"bzz-raw://0dddd6b1ff86d65cde5bc2e56d96de284f456128c65f11f05a64511672a640d4",
+				"dweb:/ipfs/QmWKsoNMNpdfE6whYjWSsarDKoP64Xar2YK4EjpV7iQDD5"
 			]
 		}
 	},
