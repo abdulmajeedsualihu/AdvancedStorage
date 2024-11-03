@@ -9,4 +9,8 @@ I really didn't had any issues due to the experience I had with Defi Team on Las
  I used the function, struct, array, conditionals, loops, visibility specifiers and enums.
  i had numerous challenges along the way and i had to go back and read the course again in order to understand it well, sometimes i do visit google for answers too.
  Indeed last week was so challenging.
- 
+ I created mapping by "mapping(string => uint256) public nameToFavoriteNumber;"
+ and events by "event NumberUpdated(uint256 newNumber, address updatedBy);"
+and also used data locations such as memory, storage and call data.
+
+In this weeks episode, i faced a lot of challenges the codes seems too difficult to understand and others.
