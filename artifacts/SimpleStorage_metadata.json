@@ -6,6 +6,25 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "newNumber",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "updatedBy",
+						"type": "address"
+					}
+				],
+				"name": "NumberUpdated",
+				"type": "event"
+			},
+			{
 				"inputs": [],
 				"name": "activateContract",
 				"outputs": [],
@@ -46,6 +65,25 @@
 			{
 				"inputs": [],
 				"name": "callInternalFunction",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_inputString",
+						"type": "string"
+					}
+				],
+				"name": "concatenateString",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -143,6 +181,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "nameToFavoriteNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -215,6 +272,25 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_newNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "updateNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -245,11 +321,11 @@
 	},
 	"sources": {
 		"SimpleStorage.sol": {
-			"keccak256": "0x4fb75510951a6208543962ba1fef8aa7c599598cbb76bff985d0bf8e57ba8feb",
+			"keccak256": "0x65944154525847ae73b1d099668c900eb52e6afc125c6b1a4c6b28ae5ea27b68",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0dddd6b1ff86d65cde5bc2e56d96de284f456128c65f11f05a64511672a640d4",
-				"dweb:/ipfs/QmWKsoNMNpdfE6whYjWSsarDKoP64Xar2YK4EjpV7iQDD5"
+				"bzz-raw://432653e59d78c67880adb0952f96f9d238ec2cd4485906618e8ad50d70f802c8",
+				"dweb:/ipfs/QmRN8FYdDmRan9s6ERFZAxPsa9zc4Dd5CoeXe839HCHVyV"
 			]
 		}
 	},

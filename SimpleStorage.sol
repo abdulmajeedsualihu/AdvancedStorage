@@ -23,6 +23,8 @@ ContractState public state; // State variable to store the current contract stat
 
     function storeNumber(uint256 _number) public {
         favoriteNumber = _number;
+        //Modify the storeNumber function to emit the NumberUpdated event.
+        emit NumberUpdated(favoriteNumber, msg.sender);
     }
 
     function getFavoriteNumber() public view returns (uint256) {
@@ -65,7 +67,7 @@ ContractState public state; // State variable to store the current contract stat
 
     //Adding new Person to the Person array 
     function addPerson(string memory _name, uint256 _favoriteNumber) public{
-        people.push(Person(_name, _favoriteNumber));
+        nameToFavoriteNumber[_name] = _favoriteNumber;
     }
 
     function activateContract() public{
@@ -78,4 +80,22 @@ ContractState public state; // State variable to store the current contract stat
      function isActive() public view returns (bool){
         return state == ContractState.Active;
      }
+
+    mapping(string => uint256) public nameToFavoriteNumber;
+    //Create an event called NumberUpdated that logs when the favorite number is updated
+    event NumberUpdated(uint256 newNumber, address updatedBy);
+
+    // Create a function that uses a memory variable for temporary calculations
+    function updateNumber(uint256 _newNumber) public pure  returns (uint256) {
+        // Memory variable is used for temporary calculations
+        uint256 tempNumber = _newNumber + 5;
+        return tempNumber;
+    }
+    // Add a function that takes a calldata string parameter and processes it without modifying the input
+    function concatenateString(string calldata _inputString) public pure returns (string memory) {
+        // Memory variable to store the concatenated result
+        string memory newString = string(abi.encodePacked(_inputString, " Woow!"));
+        return newString;
+    }
+
 }
