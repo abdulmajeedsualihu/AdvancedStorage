@@ -82,6 +82,7 @@ ContractState public state; // State variable to store the current contract stat
      }
 
     mapping(string => uint256) public nameToFavoriteNumber;
+    
     //Create an event called NumberUpdated that logs when the favorite number is updated
     event NumberUpdated(uint256 newNumber, address updatedBy);
 
